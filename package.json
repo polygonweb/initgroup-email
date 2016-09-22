@@ -1,0 +1,26 @@
+{
+  "name": "initpro-email",
+  "version": "1.0.0",
+  "description": "Email for InitGroup",
+  "author": "Alexey B.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "html:build": "pug src/index.pug -O data.json -o build",
+    "html:watch": "pug src/index.pug -O data.json -o build -w",
+    "server": "browser-sync start --server --ss \"build\" --files \"build/**/*.*\" ",
+    "dev": "concurrently \"npm run html:watch\" \"npm run server\" ",
+    "send": "node send.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "concurrently": "^2.2.0",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {
+    "nodemailer": "^2.6.4",
+    "nodemailer-sendmail-transport": "^1.0.0",
+    "nodemailer-smtp-transport": "^2.7.2"
+  }
+}

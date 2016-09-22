@@ -1,0 +1,12 @@
+mixin spacer(size)
+	table(border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;")&attributes(attributes)
+		tbody
+			tr
+				td(height=`${size}px` style=`height: ${size}px; line-height: ${size}px; font-size: ${size}px;`) &#xA0;
+
+
+mixin whitespace(count)
+	- var n = count;
+	while n > 0
+		- n--;
+		| &nbsp;

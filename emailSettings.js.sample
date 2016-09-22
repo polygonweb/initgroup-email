@@ -1,0 +1,15 @@
+module.exports = {
+
+	transportInfo: {
+		service: 'Gmail',
+		auth: {
+			user: 'user@gmail.com',
+			pass: 'password'
+		},
+		tls: {
+			rejectUnauthorized: false
+		}
+	},
+
+	recipients: 'user1@mail.ru, user2@yandex.ru, user3@gmail.com';
+};

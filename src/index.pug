@@ -1,0 +1,248 @@
+include mixins.pug
+
+doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+html
+	head
+		meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		title InitGroup Email
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic")
+		style
+			include headStyles.css
+
+	body(style="margin: 0; padding: 0")
+
+		table.main(align="center" valign="top" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-family: 'Roboto', Arial, sans-serif; font-size: 14px")
+			tbody
+				tr
+					td(align="center" valign="top" bgcolor="#3D5077")
+						table(align="center" width="640" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse")
+							tbody
+								tr
+									td
+										//- BEGIN шапка
+										+spacer(38)
+										table(align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse")
+											tbody
+												tr
+													td(align="left" valign="top")
+														a(href="#404" target="_blank" title="Init Pro" style="display: inline-block; vertical-align: top; color: #ffffff; text-transform: uppercase;")
+															img(src="img/logo.png" alt="Init Pro" border="0" width="116" height="26" style="width: 116px; height: 26px; display: block; border: 0")
+													td(align="right")
+														span(style="font-size: 13px; color: #ffffff; font-weight: 300")
+															a(href="#404" target="_blank" style="color: #ffffff; text-decoration: none")
+																span(style="color: #fff; text-decoration: none") Как начать участвовать в торгах?
+															+whitespace(8)
+															a(href="#404" target="_blank" style="color: #ffffff; text-decoration: none")
+																span(style="color: #ffffff; text-decoration: none") Тарифы
+															+whitespace(8)
+															a(href="#404" target="_blank" style="color: #ffffff; text-decoration: none")
+																span(style="color: #ffffff; text-decoration: none") Вход
+										+spacer(18)
+										//- END шапка
+
+										//- BEGIN main
+										table(align="center" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-collapse: collapse; background-color: #ffffff; border-radius: 2px")
+											tbody
+												tr
+													td(align="center" valign="top" style="vertical-align: top")
+														table(align="center" width="584" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse")
+															tbody
+																tr
+																	td
+																		+spacer(30)
+																		span(style="font-size: 14px; color: #343846") #{userName}, добрый день,
+																		+spacer(6)
+																		span(style="font-size: 14px; color: #343846") Напоминаем, что доступ к системе поиска тендеров заканчивается #[b 31.05.2016]
+																		+spacer(22)
+
+																		span(style="display:block; text-align: center; font-size: 24px; color: #333333") Популярные тарифы
+																		+spacer(30)
+
+																		//- BEGIN таблица с тарифами
+																		table(align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; table-layout: fixed;")
+																			tbody
+																				tr
+																					td(valign="top" style="vertical-align: top;")
+																						+spacer(14)
+																						table(width="100%" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: separate; border-spacing: 0; border-width: 1px; border-style: solid; border-color: #d8deec; text-align: center; border-radius: 3px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); background-color: #ffffff; border-right: 0;")
+																							tbody
+																								tr
+																									td(width="25px" style="width: 25px; height: 1px") &nbsp;
+																									td(align="center" valign="top")
+																										table(cellspacing="0" cellpadding="0" width="100%" style="width: 100%; border-collapse: collapse;")
+																											tbody
+																												tr
+																													td(align="center" style="text-align: center; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e3e6ef;")
+																														+spacer(14)
+																														span(style="font-size: 20px; color: #3d5077;") Стандарт 6
+																														+spacer(14)
+																												tr
+																													td(align="center" style="text-align: center; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e3e6ef;")
+																														+spacer(14)
+																														span(style="font-size: 16px; color: #2f3545;") 10 900 руб.
+																														+spacer(14)
+																												tr
+																													td(align="center" style="text-align: center;")
+																														+spacer(14)
+																														span(style="font-size: 16px; color: #2f3545;") #[b 6] месяцев
+																														+spacer(14)
+																												tr
+																													td(align="center" valign="top" style="text-align: center;")
+																														+spacer(18)
+																														a(href="#404" style="display: inline-block; padding-left: 43px; padding-right: 43px; padding-top: 13px; padding-bottom: 13px; font-size: 14px; background-color: #49659f; color: #ffffff; border-radius: 9999px; text-decoration: none;")
+																															span(style="font-size: 14px; background-color: #49659f; color: #ffffff; text-decoration: none;") Заказать
+																														+spacer(24)
+																									td(width="4" style="width: 4px; height: 1px") &nbsp;
+																					td(valign="top" width="213px" style="width: 213px; vertical-align: top;")
+																						table(width="100%" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: separate; border-spacing: 0; border-width: 1px; border-style: solid; border-color: #d8deec; text-align: center; border-radius: 3px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); background-color: #ffffff; position: relative;")
+																							tbody
+																								tr
+																									td(width="25px" style="width: 25px; height: 1px") &nbsp;
+																									td(align="center" valign="top")
+																										table(cellspacing="0" cellpadding="0" width="100%" style="width: 100%; border-collapse: collapse;")
+																											tbody
+																												tr
+																													td(align="center" style="text-align: center; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e3e6ef;")
+																														+spacer(14)
+																														span(style="font-size: 20px; color: #3d5077;") Стандарт 12
+																														+spacer(14)
+																												tr
+																													td(align="center" style="text-align: center; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e3e6ef;")
+																														+spacer(14)
+																														span(style="font-size: 16px; color: #2f3545;") 19 900 руб.
+																														+spacer(14)
+																												tr
+																													td(align="center" style="text-align: center;")
+																														+spacer(14)
+																														span(style="font-size: 16px; color: #2f3545;") #[b 12] месяцев
+																														+spacer(14)
+																												tr
+																													td(align="center" valign="top" style="text-align: center;")
+																														+spacer(46)
+																														a(href="#404" style="display: inline-block; padding-left: 43px; padding-right: 43px; padding-top: 13px; padding-bottom: 13px; font-size: 14px; background-color: #49659f; color: #ffffff; border-radius: 9999px; text-decoration: none;")
+																															span(style="font-size: 14px; background-color: #49659f; color: #ffffff; text-decoration: none;") Заказать
+																														+spacer(24)
+																									td(width="25px" style="width: 25px; height: 1px") &nbsp;
+																					td(valign="top" style="vertical-align: top;")
+																						+spacer(14)
+																						table(width="100%" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: separate; border-spacing: 0; border-width: 1px; border-style: solid; border-color: #d8deec; text-align: center; border-radius: 3px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); background-color: #ffffff; border-left: 0;")
+																							tbody
+																								tr
+																									td(width="4" style="width: 4px; height: 1px") &nbsp;
+																									td(align="center" valign="top")
+																										table(cellspacing="0" cellpadding="0" width="100%" style="width: 100%; border-collapse: collapse;")
+																											tbody
+																												tr
+																													td(align="center" style="text-align: center; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e3e6ef;")
+																														+spacer(14)
+																														span(style="font-size: 20px; color: #038e10;") Победитель
+																														+spacer(14)
+																												tr
+																													td(align="center" style="text-align: center; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e3e6ef;")
+																														+spacer(14)
+																														span(style="font-size: 16px; color: #2f3545;") 29 900 руб.
+																														+spacer(14)
+																												tr
+																													td(align="center" style="text-align: center;")
+																														+spacer(14)
+																														span(style="font-size: 16px; color: #2f3545;") #[b 12] месяцев
+																														+spacer(14)
+																												tr
+																													td(align="center" valign="top" style="text-align: center;")
+																														+spacer(18)
+																														a(href="#404" style="display: inline-block; padding-left: 43px; padding-right: 43px; padding-top: 13px; padding-bottom: 13px; font-size: 14px; background-color: #038e10; color: #ffffff; border-radius: 9999px; text-decoration: none;")
+																															span(style="font-size: 14px; background-color: #038e10; color: #ffffff; text-decoration: none;") Заказать
+																														+spacer(24)
+																									td(width="25px" style="width: 25px; height: 1px") &nbsp;
+																		//- END таблица с тарифами
+
+																		+spacer(30)
+
+																		b(style="display:block; text-align: center; font-size: 14px; color: #343846; font-weight: 500") Если вы уже продлили договор - можете проигнорировать это письмо
+
+																		+spacer(14)
+
+																		span(style="display:block; font-size: 14px; color: #343846;")
+																			b(style="font-weight: 500; line-height: 28px") С уважением,
+																			br
+																			b(style="font-weight: 500") #{employee}
+																			br
+																			span #{post}
+																			br
+																			span ООО «ИнитГрупп
+																			br
+																			a(href="tel:88007001250" style="font-size: 14px; color: #343846; text-decoration: none")
+																				span(style="font-size: 14px; color: #343846; text-decoration: none") сот. #{phone-mobile}
+																			br
+																			a(href="tel:83422594855" style="font-size: 14px; color: #343846; text-decoration: none")
+																				span(style="font-size: 14px; color: #343846; text-decoration: none") т. #{phone}
+																			br
+																			a(href="mailto:voronina@initgroup.ru" style="font-size: 14px; color: #343846; text-decoration: none")
+																				span(style="font-size: 14px; color: #343846; text-decoration: none") #{email}
+																			br
+																			a(href="www.initpro.ru" style="font-size: 14px; color: #343846; text-decoration: none")
+																				span(style="font-size: 14px; color: #343846; text-decoration: none") #{site}
+
+																		+spacer(30)
+										//- END main
+
+										+spacer(5)
+
+										//- BEGIN интструкции
+										table(align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 2px; overflow: hidden;")
+											tbody
+												tr
+													td(valign="middle" align="center" bgcolor="#474541" style="text-align: center; background-color: #474541; background-image: url('img/service-bg.jpg'); background-positoin: 50% 0; border-radius: 2px")
+
+														table(align="center" width="508" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; border-collapse: collapse")
+															tbody
+																tr
+																	td(valign="top" align="center" color="#ffffff" style="text-align: center; color: #ffffff")
+																		+spacer(30)
+																		span(style="color: #ffffff; font-weight: 300; font-size: 24px") Подробные инструкции
+																		+spacer(30)
+																		span(style="color: #ffffff; font-weight: 300; font-size: 14px") Мы продолжаем совершенствовать наш сервис, постоянно улучшая эффективность работы с ним. Поэтому мы создали место, где вы можете посмотреть, как работает та или иная функция, какие настройки существуют  и что для этого нужно сделать.
+																		+spacer(30)
+																		table(width="100%" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse")
+																			tbody
+																				tr
+																					td(align="center" valign="top" style="vertical-align: top; text-align: center;")
+																						a(href="#404" style="display: inline-block; padding-left: 22px; padding-right: 22px; padding-top: 14px; padding-bottom: 15px; text-align: center; background-color: #008e0f; color: #ffffff; font-size: 16px; font-weight: 300; text-decoration: none; border-radius: 3px")
+																							span(style="background-color: #038E10; color: #ffffff; text-align: center; font-size: 16px; font-weight: 300; text-decoration: none") Справочный центр
+																		+spacer(30)
+										//- END интструкции
+
+										//- BEGIN help
+										table(align="center" width="508" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; border-collapse: collapse")
+											tbody
+												tr
+													td(align="center" valign="top" style="text-align: center; font-size: 14px; color: #dbdfeb;")
+														+spacer(14)
+														span Остались вопросы или нужна помощь с настройкой?
+														br
+														span Закажите обратный звонок нашим специалистам
+														+spacer(14)
+
+														table(border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; border-collapse: collapse")
+															tbody
+																tr
+																	td(align="center" valign="top")
+																		a(href="#404" style="display: inline-block; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; border: 1px solid; color: #dbdfeb; text-decoration: none; border-radius: 3px")
+																			span(style="color: #dbdfeb; text-decoration: none;") Обратный звонок
+														+spacer(20)
+										//- END help
+
+										+spacer(1)(width="100%" bgcolor="#7782a1" style="width: 100%; background-color: #7782a1")
+										<!-- Author: Alexey Buzmakov. monochromer@mail.ru -->
+										+spacer(10)
+
+										//- BEGIN unsubscribe
+										table(align="center" width="508" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; border-collapse: collapse")
+											tbody
+												tr
+													td(align="center" valign="top")
+														a(href="#404" style="color: #dbdfeb; text-decoration: none; font-size: 14px; line-height: 18px; font-weight: 300; border-bottom-width: 1px; border-bottom-style: dashed;")
+															span(style="color: #dbdfeb; text-decoration: none; font-size: 14px; line-height: 18px; font-weight: 300") Нажмите здесь, чтобы отписаться от рассылки
+										//- END unsubscribe
+
+										+spacer(30)
