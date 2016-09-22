@@ -11,5 +11,5 @@ module.exports = {
 		}
 	},
 
-	recipients: 'user1@mail.ru, user2@yandex.ru, user3@gmail.com';
+	recipients: 'user1@mail.ru, user2@yandex.ru, user3@gmail.com'
 };

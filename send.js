@@ -2,15 +2,15 @@ var nodemailer = require('nodemailer');
 var pug = require('pug');
 
 var compiledFunction = pug.compileFile('src/index.pug');
-var data = JSON.parse(require('data.json'));
+var data = require('./data.json');
 var html = compiledFunction(data);
 
-var emailSettings = require('emailSettings.js');
+var emailSettings = require('./emailSettings.js');
 
 transporter = nodemailer.createTransport(emailSettings.transportInfo);
 
 var mailOptions = {
-	from: emailSettings.auth.user,
+	from: emailSettings.transportInfo.auth.user,
 	to: emailSettings.recipients,
 	subject: 'Email Test',
 	html: html
